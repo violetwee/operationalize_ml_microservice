@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![violetwee](https://circleci.com/gh/violetwee/operationalize_ml_microservice.svg?style=svg)](https://app.circleci.com/pipelines/github/violetwee/operationalize_ml_microservice?branch=master)
 
 ## Project Overview
 
