@@ -8,33 +8,33 @@ Given a pre-trained, `sklearn` model that has been trained to predict housing pr
 
 This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
 
-### Repo Structure and Files
-- .circleci/config.yml
+## Repo Structure and Files
+- **.circleci/config.yml**
   Validates that the project builds without errors
   
-- model_data/*
+- __model_data/*__
   Data source used for making predictions
   
-- output_txt_files/*
+- __output_txt_files/*__
   Sample output after successfully making a prediction on Docker and Kubernetes
   
-- app.py
+- __app.py__
   Python Flask app that serves out housing prices predictions through API calls
   
-- Dockerfile 
+- __Dockerfile__
   Containerizes Flask app in Docker
   
-- Makefile
+- __Makefile__
   Lints Dockerfile and app.py
   
-- requirements.txt
+- __requirements.txt__
   List of dependencies to install
   
-- Scripts
-  run_docker.sh: Build, list and run docker
-  run_kubernetes.sh: Run docker image with kubernetes
-  upload_docker.sh: Uploads docker image to Docker Hub. Replace dockerpath value to upload to your own personal Docker Hub
-  make_prediction.sh: Sends a POST request with a set of fixed parameters to Flask API (for testing purposes)
+- __Scripts__
+  - __run_docker.sh__: Build, list and run docker
+  - __run_kubernetes.sh__: Run docker image with kubernetes
+  - __upload_docker.sh__: Uploads docker image to Docker Hub. Replace dockerpath value to upload to your own personal Docker Hub
+  - __make_prediction.sh__: Sends a POST request with a set of fixed parameters to Flask API (for testing purposes)
 
 ## Setup the Environment
 
